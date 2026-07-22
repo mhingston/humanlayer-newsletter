@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>HumanLayer Blog</title>
+        <link>https://www.humanlayer.dev/</link>
+        <description>Posts from humanlayer.dev/blog — coding agents, context engineering, and harness design by Dex &amp; Kyle</description>
+        <lastBuildDate>Fri, 15 May 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <atom:link href="https://mhingston.github.io/humanlayer-newsletter/feed.rss.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Context Forking to Save Time, Tokens and Trouble]]></title>
+            <link>https://www.humanlayer.dev/blog/context-forking-to-save-time-trouble-and-tokens</link>
+            <guid isPermaLink="false">https://www.humanlayer.dev/blog/context-forking-to-save-time-trouble-and-tokens</guid>
+            <pubDate>Fri, 15 May 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Context forking is a powerful coding agent primitive that allows you to build up high-quality context and then reuse it multiple times.]]></description>
+            <content:encoded><![CDATA[Context forking is a powerful coding agent primitive that allows you to build up high-quality context and then reuse it multiple times.]]></content:encoded>
+            <author>Kyle</author>
+        </item>
+        <item>
+            <title><![CDATA[Long-Context Isn't the Answer]]></title>
+            <link>https://www.humanlayer.dev/blog/long-context-isnt-the-answer</link>
+            <guid isPermaLink="false">https://www.humanlayer.dev/blog/long-context-isnt-the-answer</guid>
+            <pubDate>Mon, 23 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[We tried Opus with 1M context for coding agents, and now we're switching back. It turns out it's not about the size of the context window - it's about the quality.]]></description>
+            <content:encoded><![CDATA[We tried Opus with 1M context for coding agents, and now we're switching back. It turns out it's not about the size of the context window - it's about the quality.]]></content:encoded>
+            <author>Kyle</author>
+        </item>
+        <item>
+            <title><![CDATA[Getting Claude to Actually Read Your CLAUDE.md]]></title>
+            <link>https://www.humanlayer.dev/blog/stop-claude-from-ignoring-your-claude-md</link>
+            <guid isPermaLink="false">https://www.humanlayer.dev/blog/stop-claude-from-ignoring-your-claude-md</guid>
+            <pubDate>Tue, 17 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Using conditional XML blocks to make Claude pay attention to the right instructions at the right time.]]></description>
+            <content:encoded><![CDATA[Using conditional XML blocks to make Claude pay attention to the right instructions at the right time.]]></content:encoded>
+            <author>Dex</author>
+        </item>
+        <item>
+            <title><![CDATA[Skill Issue: Harness Engineering for Coding Agents]]></title>
+            <link>https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents</link>
+            <guid isPermaLink="false">https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents</guid>
+            <pubDate>Thu, 12 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Harness engineering is the art and science of leveraging your coding agent's configuration points to improve output quality and increase task success rates.]]></description>
+            <content:encoded><![CDATA[Harness engineering is the art and science of leveraging your coding agent's configuration points to improve output quality and increase task success rates.]]></content:encoded>
+            <author>Kyle</author>
+        </item>
+        <item>
+            <title><![CDATA[A Brief History of Ralph]]></title>
+            <link>https://www.humanlayer.dev/blog/brief-history-of-ralph</link>
+            <guid isPermaLink="false">https://www.humanlayer.dev/blog/brief-history-of-ralph</guid>
+            <pubDate>Tue, 06 Jan 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Ralph Wiggum Technique went viral in the last week of 2025. Here's the story of ralph since the first time I met Geoff in June of 2025.]]></description>
+            <content:encoded><![CDATA[The Ralph Wiggum Technique went viral in the last week of 2025. Here's the story of ralph since the first time I met Geoff in June of 2025.]]></content:encoded>
+            <author>Dex</author>
+        </item>
+        <item>
+            <title><![CDATA[Context-Efficient Backpressure for Coding Agents]]></title>
+            <link>https://www.humanlayer.dev/blog/context-efficient-backpressure</link>
+            <guid isPermaLink="false">https://www.humanlayer.dev/blog/context-efficient-backpressure</guid>
+            <pubDate>Tue, 09 Dec 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[Verbose test and build output wastes tokens and confuses agents. A simple wrapper script can dramatically improve agent performance.]]></description>
+            <content:encoded><![CDATA[Verbose test and build output wastes tokens and confuses agents. A simple wrapper script can dramatically improve agent performance.]]></content:encoded>
+            <author>Dex</author>
+        </item>
+        <item>
+            <title><![CDATA[Writing a good CLAUDE.md]]></title>
+            <link>https://www.humanlayer.dev/blog/writing-a-good-claude-md</link>
+            <guid isPermaLink="false">https://www.humanlayer.dev/blog/writing-a-good-claude-md</guid>
+            <pubDate>Tue, 25 Nov 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[`CLAUDE.md` is a high-leverage configuration point for Claude Code. Learning how to write a good `CLAUDE.md` (or `AGENTS.md`) is a key skill for agent-enabled software engineering.]]></description>
+            <content:encoded><![CDATA[`CLAUDE.md` is a high-leverage configuration point for Claude Code. Learning how to write a good `CLAUDE.md` (or `AGENTS.md`) is a key skill for agent-enabled software engineering.]]></content:encoded>
+            <author>Kyle</author>
+        </item>
+        <item>
+            <title><![CDATA[Advanced Context Engineering for Coding Agents]]></title>
+            <link>https://www.humanlayer.dev/blog/advanced-context-engineering</link>
+            <guid isPermaLink="false">https://www.humanlayer.dev/blog/advanced-context-engineering</guid>
+            <pubDate>Fri, 29 Aug 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[How do we get AI coding agents to solve hard problems in complex, brownfield codebases?]]></description>
+            <content:encoded><![CDATA[How do we get AI coding agents to solve hard problems in complex, brownfield codebases?]]></content:encoded>
+            <author>Dex</author>
+        </item>
+        <item>
+            <title><![CDATA[12 Factor Agents]]></title>
+            <link>https://www.humanlayer.dev/blog/12-factor-agents</link>
+            <guid isPermaLink="false">https://www.humanlayer.dev/blog/12-factor-agents</guid>
+            <pubDate>Thu, 03 Apr 2025 00:00:00 GMT</pubDate>
+            <description><![CDATA[The Original **12 Factor Agents** Manifesto. What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?]]></description>
+            <content:encoded><![CDATA[The Original **12 Factor Agents** Manifesto. What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?]]></content:encoded>
+            <author>Dex</author>
+        </item>
+    </channel>
+</rss>
