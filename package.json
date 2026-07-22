@@ -24,7 +24,7 @@
     "dotenv": "^17.4.2",
     "feed": "^6.0.0",
     "firecrawl": "^4.30.0",
-    "zod": "^3.25.76"
+    "zod": "^4.4.3"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
