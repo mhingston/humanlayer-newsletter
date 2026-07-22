@@ -23,7 +23,7 @@
   "dependencies": {
     "dotenv": "^17.4.2",
     "feed": "^6.0.0",
-    "firecrawl": "^4.30.0",
+    "firecrawl": "^4.30.1",
     "zod": "^3.25.76"
   },
   "devDependencies": {
