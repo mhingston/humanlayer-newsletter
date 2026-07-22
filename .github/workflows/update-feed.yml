@@ -1,0 +1,108 @@
+name: Update feed
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+concurrency:
+  group: humanlayer-newsletter-update
+  cancel-in-progress: false
+
+env:
+  FIRECRAWL_API_KEY: ${{ secrets.FIRECRAWL_API_KEY }}
+  SOURCE_URL: ${{ vars.SOURCE_URL }}
+  FEED_TITLE: ${{ vars.FEED_TITLE }}
+  FEED_DESCRIPTION: ${{ vars.FEED_DESCRIPTION }}
+  PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
+  FEED_SITE_URL: ${{ vars.FEED_SITE_URL }}
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      status: ${{ steps.result.outputs.status }}
+    steps:
+      - name: Check out default branch
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - name: Set up Node.js 24
+        uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Propagate optional env vars
+        # Repository variables render to empty strings when unset, which
+        # the config schema rejects as invalid for the keys below. Only
+        # forward vars that have a non-empty value so process.env never
+        # sees a key the schema treats as truly optional.
+        run: |
+          maybe_set() {
+            if [ -n "$1" ]; then
+              printf '%s=%s\n' "$2" "$1" >> "$GITHUB_ENV"
+            fi
+          }
+          maybe_set "${{ vars.ATOM_FILENAME }}" ATOM_FILENAME
+          maybe_set "${{ vars.RSS_FILENAME }}" RSS_FILENAME
+          maybe_set "${{ vars.MAX_FEED_ITEMS }}" MAX_FEED_ITEMS
+          maybe_set "${{ vars.INITIAL_ITEM_LIMIT }}" INITIAL_ITEM_LIMIT
+          maybe_set "${{ vars.EXTRACTION_HINT }}" EXTRACTION_HINT
+          maybe_set "${{ vars.FIRECRAWL_TIMEOUT_MS }}" FIRECRAWL_TIMEOUT_MS
+          maybe_set "${{ vars.FIRECRAWL_MAX_AGE_MS }}" FIRECRAWL_MAX_AGE_MS
+          maybe_set "${{ vars.FIRECRAWL_ONLY_MAIN_CONTENT }}" FIRECRAWL_ONLY_MAIN_CONTENT
+          maybe_set "${{ vars.FIRECRAWL_PROXY }}" FIRECRAWL_PROXY
+          maybe_set "${{ vars.FEED_LANGUAGE }}" FEED_LANGUAGE
+          maybe_set "${{ vars.FEED_AUTHOR }}" FEED_AUTHOR
+          maybe_set "${{ vars.FEED_COPYRIGHT }}" FEED_COPYRIGHT
+      - name: Update feed
+        id: update
+        shell: bash
+        run: |
+          set -o pipefail
+          npm run update 2>&1 | tee update.log
+      - name: Read update result
+        id: result
+        shell: bash
+        run: |
+          result="$(tail -n 1 update.log)"
+          status="$(node --input-type=module -e 'const result = JSON.parse(process.argv[1]); console.log(result.status);' "$result")"
+          echo "status=$status" >> "$GITHUB_OUTPUT"
+      - name: Commit updated state and feeds
+        if: steps.result.outputs.status == 'updated'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/state.json public/
+          if git diff --cached --quiet; then
+            echo "No file changes to commit"
+          else
+            git commit -m "chore: update feed"
+            git push
+          fi
+      - name: Upload GitHub Pages artifact
+        if: steps.result.outputs.status == 'updated'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: public
+
+  deploy:
+    if: needs.update.outputs.status == 'updated'
+    needs: update
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

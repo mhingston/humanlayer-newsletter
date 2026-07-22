@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "sourceUrl": "https://example.com/news",
+  "entries": [
+    {
+      "id": "https://example.com/first",
+      "url": "https://example.com/first",
+      "title": "First entry",
+      "publishedAt": "2026-07-14T08:00:00.000Z",
+      "firstSeenAt": "2026-07-14T09:00:00.000Z",
+      "summary": "The first visible entry."
+    }
+  ]
+}

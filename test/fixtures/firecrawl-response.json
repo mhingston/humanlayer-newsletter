@@ -1,0 +1,26 @@
+{
+  "json": {
+    "entries": [
+      {
+        "title": "First entry",
+        "url": "/first",
+        "publishedAt": "2026-07-14T08:00:00.000Z",
+        "summary": "The first visible entry."
+      },
+      {
+        "title": "Duplicate entry",
+        "url": "https://example.com/first#comments",
+        "publishedAt": "2026-07-14T07:00:00.000Z"
+      },
+      {
+        "title": "Invalid URL",
+        "url": "mailto:invalid@example.com"
+      },
+      {
+        "title": "External entry",
+        "url": "https://external.example/item?utm_source=feed&ref=important",
+        "updatedAt": "2026-07-13T08:00:00.000Z"
+      }
+    ]
+  }
+}
