@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.humanlayer.dev/blog</id>
     <title>HumanLayer Blog</title>
-    <updated>2026-05-15T00:00:00.000Z</updated>
+    <updated>2026-08-12T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.humanlayer.dev/"/>
     <link rel="self" href="https://mhingston.github.io/humanlayer-newsletter/feed.atom.xml"/>
     <subtitle>Posts from humanlayer.dev/blog — coding agents, context engineering, and harness design by Dex &amp; Kyle</subtitle>
+    <entry>
+        <title type="html"><![CDATA[show-me: a coding agent skill for compact visual representations]]></title>
+        <id>https://www.humanlayer.dev/blog/show-me-skill</id>
+        <link href="https://www.humanlayer.dev/blog/show-me-skill"/>
+        <updated>2026-08-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A small skill that makes coding agents explain software with diagrams, trees, diffs, and focused visual artifacts.]]></summary>
+        <content type="html"><![CDATA[A small skill that makes coding agents explain software with diagrams, trees, diffs, and focused visual artifacts.]]></content>
+        <author>
+            <name>Dex</name>
+        </author>
+        <published>2026-08-12T00:00:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Context Forking to Save Time, Tokens and Trouble]]></title>
         <id>https://www.humanlayer.dev/blog/context-forking-to-save-time-trouble-and-tokens</id>

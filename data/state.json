@@ -3,11 +3,20 @@
   "sourceUrl": "https://www.humanlayer.dev/blog",
   "entries": [
     {
+      "id": "https://www.humanlayer.dev/blog/show-me-skill",
+      "url": "https://www.humanlayer.dev/blog/show-me-skill",
+      "title": "show-me: a coding agent skill for compact visual representations",
+      "firstSeenAt": "2026-08-13T07:51:01.916Z",
+      "publishedAt": "2026-08-12T00:00:00.000Z",
+      "summary": "A small skill that makes coding agents explain software with diagrams, trees, diffs, and focused visual artifacts.",
+      "author": "Dex"
+    },
+    {
       "id": "https://www.humanlayer.dev/blog/context-forking-to-save-time-trouble-and-tokens",
       "url": "https://www.humanlayer.dev/blog/context-forking-to-save-time-trouble-and-tokens",
       "title": "Context Forking to Save Time, Tokens and Trouble",
-      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "publishedAt": "2026-05-15T00:00:00.000Z",
+      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "summary": "Context forking is a powerful coding agent primitive that allows you to build up high-quality context and then reuse it multiple times.",
       "author": "Kyle"
     },
@@ -15,8 +24,8 @@
       "id": "https://www.humanlayer.dev/blog/long-context-isnt-the-answer",
       "url": "https://www.humanlayer.dev/blog/long-context-isnt-the-answer",
       "title": "Long-Context Isn't the Answer",
-      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "publishedAt": "2026-03-23T00:00:00.000Z",
+      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "summary": "We tried Opus with 1M context for coding agents, and now we're switching back. It turns out it's not about the size of the context window - it's about the quality.",
       "author": "Kyle"
     },
@@ -24,8 +33,8 @@
       "id": "https://www.humanlayer.dev/blog/stop-claude-from-ignoring-your-claude-md",
       "url": "https://www.humanlayer.dev/blog/stop-claude-from-ignoring-your-claude-md",
       "title": "Getting Claude to Actually Read Your CLAUDE.md",
-      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "publishedAt": "2026-03-17T00:00:00.000Z",
+      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "summary": "Using conditional XML blocks to make Claude pay attention to the right instructions at the right time.",
       "author": "Dex"
     },
@@ -33,8 +42,8 @@
       "id": "https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents",
       "url": "https://www.humanlayer.dev/blog/skill-issue-harness-engineering-for-coding-agents",
       "title": "Skill Issue: Harness Engineering for Coding Agents",
-      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "publishedAt": "2026-03-12T00:00:00.000Z",
+      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "summary": "Harness engineering is the art and science of leveraging your coding agent's configuration points to improve output quality and increase task success rates.",
       "author": "Kyle"
     },
@@ -42,8 +51,8 @@
       "id": "https://www.humanlayer.dev/blog/brief-history-of-ralph",
       "url": "https://www.humanlayer.dev/blog/brief-history-of-ralph",
       "title": "A Brief History of Ralph",
-      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "publishedAt": "2026-01-06T00:00:00.000Z",
+      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "summary": "The Ralph Wiggum Technique went viral in the last week of 2025. Here's the story of ralph since the first time I met Geoff in June of 2025.",
       "author": "Dex"
     },
@@ -51,8 +60,8 @@
       "id": "https://www.humanlayer.dev/blog/context-efficient-backpressure",
       "url": "https://www.humanlayer.dev/blog/context-efficient-backpressure",
       "title": "Context-Efficient Backpressure for Coding Agents",
-      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "publishedAt": "2025-12-09T00:00:00.000Z",
+      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "summary": "Verbose test and build output wastes tokens and confuses agents. A simple wrapper script can dramatically improve agent performance.",
       "author": "Dex"
     },
@@ -60,8 +69,8 @@
       "id": "https://www.humanlayer.dev/blog/writing-a-good-claude-md",
       "url": "https://www.humanlayer.dev/blog/writing-a-good-claude-md",
       "title": "Writing a good CLAUDE.md",
-      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "publishedAt": "2025-11-25T00:00:00.000Z",
+      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "summary": "`CLAUDE.md` is a high-leverage configuration point for Claude Code. Learning how to write a good `CLAUDE.md` (or `AGENTS.md`) is a key skill for agent-enabled software engineering.",
       "author": "Kyle"
     },
@@ -69,8 +78,8 @@
       "id": "https://www.humanlayer.dev/blog/advanced-context-engineering",
       "url": "https://www.humanlayer.dev/blog/advanced-context-engineering",
       "title": "Advanced Context Engineering for Coding Agents",
-      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "publishedAt": "2025-08-29T00:00:00.000Z",
+      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "summary": "How do we get AI coding agents to solve hard problems in complex, brownfield codebases?",
       "author": "Dex"
     },
@@ -78,8 +87,8 @@
       "id": "https://www.humanlayer.dev/blog/12-factor-agents",
       "url": "https://www.humanlayer.dev/blog/12-factor-agents",
       "title": "12 Factor Agents",
-      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "publishedAt": "2025-04-03T00:00:00.000Z",
+      "firstSeenAt": "2026-07-22T14:06:05.181Z",
       "summary": "The Original **12 Factor Agents** Manifesto. What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?",
       "author": "Dex"
     }
