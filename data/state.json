@@ -3,11 +3,20 @@
   "sourceUrl": "https://www.humanlayer.dev/blog",
   "entries": [
     {
+      "id": "https://www.humanlayer.dev/blog/humanlayer-resources",
+      "url": "https://www.humanlayer.dev/blog/humanlayer-resources",
+      "title": "HumanLayer - All Resources",
+      "firstSeenAt": "2026-09-06T10:52:20.304Z",
+      "publishedAt": "2026-09-04T00:00:00.000Z",
+      "summary": "A chronology of HumanLayer's writing, speaking, etc",
+      "author": "Dex"
+    },
+    {
       "id": "https://www.humanlayer.dev/blog/show-me-skill",
       "url": "https://www.humanlayer.dev/blog/show-me-skill",
       "title": "show-me: a coding agent skill for compact visual representations",
-      "firstSeenAt": "2026-08-13T07:51:01.916Z",
       "publishedAt": "2026-08-12T00:00:00.000Z",
+      "firstSeenAt": "2026-08-13T07:51:01.916Z",
       "summary": "A small skill that makes coding agents explain software with diagrams, trees, diffs, and focused visual artifacts.",
       "author": "Dex"
     },
