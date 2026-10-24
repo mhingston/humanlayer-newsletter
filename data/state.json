@@ -3,11 +3,20 @@
   "sourceUrl": "https://www.humanlayer.dev/blog",
   "entries": [
     {
+      "id": "https://www.humanlayer.dev/blog/open-sourcing-humanlayer",
+      "url": "https://www.humanlayer.dev/blog/open-sourcing-humanlayer",
+      "title": "Open sourcing HumanLayer",
+      "firstSeenAt": "2026-10-24T10:53:28.514Z",
+      "publishedAt": "2026-10-23T00:00:00.000Z",
+      "summary": "HumanLayer core is now open source. Hosted HumanLayer is unchanged for now.",
+      "author": "Dex"
+    },
+    {
       "id": "https://www.humanlayer.dev/blog/humanlayer-resources",
       "url": "https://www.humanlayer.dev/blog/humanlayer-resources",
       "title": "HumanLayer - All Resources",
-      "firstSeenAt": "2026-09-06T10:52:20.304Z",
       "publishedAt": "2026-09-04T00:00:00.000Z",
+      "firstSeenAt": "2026-09-06T10:52:20.304Z",
       "summary": "A chronology of HumanLayer's writing, speaking, etc",
       "author": "Dex"
     },

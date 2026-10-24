@@ -2,11 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.humanlayer.dev/blog</id>
     <title>HumanLayer Blog</title>
-    <updated>2026-09-04T00:00:00.000Z</updated>
+    <updated>2026-10-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.humanlayer.dev/"/>
     <link rel="self" href="https://mhingston.github.io/humanlayer-newsletter/feed.atom.xml"/>
     <subtitle>Posts from humanlayer.dev/blog — coding agents, context engineering, and harness design by Dex &amp; Kyle</subtitle>
+    <entry>
+        <title type="html"><![CDATA[Open sourcing HumanLayer]]></title>
+        <id>https://www.humanlayer.dev/blog/open-sourcing-humanlayer</id>
+        <link href="https://www.humanlayer.dev/blog/open-sourcing-humanlayer"/>
+        <updated>2026-10-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[HumanLayer core is now open source. Hosted HumanLayer is unchanged for now.]]></summary>
+        <content type="html"><![CDATA[HumanLayer core is now open source. Hosted HumanLayer is unchanged for now.]]></content>
+        <author>
+            <name>Dex</name>
+        </author>
+        <published>2026-10-23T00:00:00.000Z</published>
+    </entry>
     <entry>
         <title type="html"><![CDATA[HumanLayer - All Resources]]></title>
         <id>https://www.humanlayer.dev/blog/humanlayer-resources</id>
